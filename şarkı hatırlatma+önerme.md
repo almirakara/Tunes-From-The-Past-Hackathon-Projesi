@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 #Kullanıcının dinlediği şarkıların listesi
-musicdata = pd.read_excel("Music_list.xlsx filepath")
+musicdata = pd.read_excel("Music_list.xlsx filepath") #filepathi kullanıcı kendisi eklemeli
 mset = pd.DataFrame(musicdata)
 print("Songs you have listened to: \n\n", mset)
 print("Select location:")
