@@ -1,13 +1,1 @@
-print("Dataframe: \n\n", mset)
 
-print("Select location:")
-current_loc = input()
-loc_choice = mset[mset["Location"] == current_loc]
-genre_values = loc_choice['Genre'].values
-most_common_genre = pd.Series(genre_values).mode()[0]
-
-systemdata = pd.read_excel("/Users/f-35/Documents/system_database.xlsx")
-sset = pd.DataFrame(systemdata)
-gen_choice = sset[sset["Genre"] == most_common_genre]
-print("İşte dinlemeye doyamadığın şarkılara benzer birkaç şarkı önerisi!")
-print(gen_choice)
